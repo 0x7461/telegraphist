@@ -1,5 +1,5 @@
 [project]
-name = "telegram-backup"
+name = "telegraphist"
 version = "0.1.0"
 description = "Telegram chat backup tool — messages, media, reactions to SQLite + HTML"
 readme = "README.md"

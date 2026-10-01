@@ -136,7 +136,7 @@ wheels = [
 ]
 
 [[package]]
-name = "telegram-backup"
+name = "telegraphist"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

@@ -1,9 +1,9 @@
-# Gr4mFetch - Advanced Backup Solution for Telegram Chats
+# telegraphist - Advanced Backup Solution for Telegram Chats
 
 > **Customized fork of [TelegramBackup](https://github.com/N4rr34n6/TelegramBackup) by N4rr34n6**
 > Enhanced with environment-based configuration, organized output structure, and modern Python tooling.
 
-Gr4mFetch is a comprehensive tool designed for extracting, organizing, and archiving messages from your Telegram chats, channels, and groups. It preserves not only message content but also media files, reactions, replies, forwarded content, and other rich features that make Telegram unique. Whether you need to back up personal conversations, archive large channels, or export group discussions, Gr4mFetch offers a complete solution.
+telegraphist is a comprehensive tool designed for extracting, organizing, and archiving messages from your Telegram chats, channels, and groups. It preserves not only message content but also media files, reactions, replies, forwarded content, and other rich features that make Telegram unique. Whether you need to back up personal conversations, archive large channels, or export group discussions, telegraphist offers a complete solution.
 
 ## 🎯 Fork Enhancements
 
@@ -42,8 +42,8 @@ This fork adds the following improvements over the original:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/0x7461/gr4mfetch.git
-    cd gr4mfetch
+    git clone https://github.com/0x7461/telegraphist.git
+    cd telegraphist
     ```
 
 2. **Install dependencies with uv**:
@@ -59,7 +59,7 @@ This fork adds the following improvements over the original:
 
 ## 🔑 Getting Telegram API Credentials
 
-Before using Gr4mFetch, you need to obtain your own Telegram API credentials:
+Before using telegraphist, you need to obtain your own Telegram API credentials:
 
 1. **Visit the Telegram API Development Tools**:
    - Go to https://my.telegram.org
@@ -69,8 +69,8 @@ Before using Gr4mFetch, you need to obtain your own Telegram API credentials:
    - Click on "API Development tools"
    - Fill out the form with your application details
    - Suggested values:
-     - App title: `Gr4mFetch` (or your preference)
-     - Short name: `gr4mfetch`
+     - App title: `telegraphist` (or your preference)
+     - Short name: `telegraphist`
      - Platform: `Desktop`
    - Click "Create application"
 
@@ -78,7 +78,7 @@ Before using Gr4mFetch, you need to obtain your own Telegram API credentials:
    - After creating the application, you'll see your **api_id** (a number) and **api_hash** (a string)
    - Keep these values secure - they're associated with your Telegram account
 
-4. **Configure Gr4mFetch**:
+4. **Configure telegraphist**:
    - Copy the example environment file:
      ```bash
      cp .env.example .env
@@ -230,7 +230,7 @@ If you're backing up chats with hundreds of thousands of messages:
 ## 📂 Project Structure
 
 ```
-gr4mfetch/
+telegraphist/
 ├── .env                    # Your credentials (git-ignored, create from .env.example)
 ├── .env.example            # Template for credentials
 ├── telegram_backup.py      # Main backup script
@@ -285,4 +285,4 @@ This project is a fork of [TelegramBackup](https://github.com/N4rr34n6/TelegramB
 
 ---
 
-*Gr4mFetch provides a comprehensive, customizable, and reliable solution for preserving your Telegram communications. Whether for personal archiving or professional data analysis, this tool offers unmatched flexibility and functionality.*
+*telegraphist provides a comprehensive, customizable, and reliable solution for preserving your Telegram communications. Whether for personal archiving or professional data analysis, this tool offers unmatched flexibility and functionality.*

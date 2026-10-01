@@ -1,4 +1,4 @@
-"""Headless, importable entry points for gr4mfetch.
+"""Headless, importable entry points for telegraphist.
 
 Drives the existing telegram_backup functions (process_entity / update_entity)
 without the interactive main() menu, so archiver's `telegram` source backend
@@ -109,7 +109,7 @@ async def _cli():
     import argparse
     import json
 
-    parser = argparse.ArgumentParser(description="Headless gr4mfetch channel backup")
+    parser = argparse.ArgumentParser(description="Headless telegraphist channel backup")
     parser.add_argument("channel_id", type=int, nargs="?",
                         help="immutable Telegram channel id (omit with --login)")
     parser.add_argument("--login", action="store_true",
