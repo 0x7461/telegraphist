@@ -2,6 +2,7 @@
 
 > **Customized fork of [TelegramBackup](https://github.com/N4rr34n6/TelegramBackup) by N4rr34n6**
 > Enhanced with environment-based configuration, organized output structure, and modern Python tooling.
+> Formerly `gr4mfetch`, renamed 2026-10-01; old GitHub links redirect here.
 
 telegraphist is a comprehensive tool designed for extracting, organizing, and archiving messages from your Telegram chats, channels, and groups. It preserves not only message content but also media files, reactions, replies, forwarded content, and other rich features that make Telegram unique. Whether you need to back up personal conversations, archive large channels, or export group discussions, telegraphist offers a complete solution.
 
@@ -265,7 +266,7 @@ telegraphist/
 
 ## 📝 Technical Details
 
-- **Message Processing**: TelegramBackup iterates through messages of a selected entity, extracts their content and metadata, and stores everything in an SQLite database.
+- **Message Processing**: telegraphist iterates through messages of a selected entity, extracts their content and metadata, and stores everything in an SQLite database.
 - **Media Handling**: Media files are downloaded to a structured directory and referenced in the database by path and hash.
 - **HTML Rendering**: Using Jinja2 templating, the script generates a responsive HTML interface for browsing the archived messages.
 - **Flood Control**: The script implements flood control management by respecting Telegram API rate limits.
@@ -273,7 +274,7 @@ telegraphist/
 
 ## ⚖️ Ethical Use and Legal Considerations
 
-**TelegramBackup** is intended for personal use, enabling users to backup their own Telegram data. The misuse of this tool, such as unauthorized data extraction from accounts or channels where you do not have permission, is strictly prohibited. Ensure that all data you process with this tool complies with Telegram's terms of service and local data protection laws.
+**telegraphist** is intended for personal use, enabling users to backup their own Telegram data. The misuse of this tool, such as unauthorized data extraction from accounts or channels where you do not have permission, is strictly prohibited. Ensure that all data you process with this tool complies with Telegram's terms of service and local data protection laws.
 
 ## 📄 License
 
