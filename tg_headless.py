@@ -1,7 +1,7 @@
 """Headless, importable entry points for telegraphist.
 
 Drives the existing telegram_backup functions (process_entity / update_entity)
-without the interactive main() menu, so archiver's `telegram` source backend
+without the interactive main() menu, so archivist's `telegram` source backend
 can call them programmatically. Purely additive: this module does NOT modify
 the upstream monolith, so it never conflicts on an upstream rebase.
 
@@ -151,7 +151,7 @@ async def _cli():
                 gap_min=manifest.get("gap_min", 3.0),
                 gap_max=manifest.get("gap_max", 6.0))
         finally:
-            await client.disconnect()  # NEVER log_out — session is shared with archiver
+            await client.disconnect()  # NEVER log_out — session is shared with archivist
         print("POST_RESULTS " + json.dumps(results))
         return
 
@@ -170,7 +170,7 @@ async def _cli():
             download_media=not args.no_media,
         )
     finally:
-        await client.disconnect()  # NEVER log_out — the session is shared with archiver
+        await client.disconnect()  # NEVER log_out — the session is shared with archivist
 
 
 if __name__ == "__main__":
