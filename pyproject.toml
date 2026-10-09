@@ -10,3 +10,8 @@ dependencies = [
     "python-dotenv>=1.2.1",
     "telethon>=1.42.0",
 ]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
